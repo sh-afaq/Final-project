@@ -1,4 +1,4 @@
-﻿namespace IT.Data
+﻿namespace IT.Business.Interfaces
 {
     public class Class1
     {

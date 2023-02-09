@@ -1,5 +1,5 @@
 ﻿using IT.Business.DataServices;
-using IT.Business.DataServices.Interfaces;
+using IT.Business.Interfaces;
 using IT.Business.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -9,8 +9,8 @@ namespace IT.Webapp.Controllers
 {
     public class UserController : Controller
     {
-        private readonly IUserServices _userService;
-        public UserController (IUserServices userService)
+        private readonly IUserService _userService;
+        public UserController (IUserService userService)
         {
             _userService = userService;
         }

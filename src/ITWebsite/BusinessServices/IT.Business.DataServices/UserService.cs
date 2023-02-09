@@ -1,10 +1,11 @@
-﻿using IT.Business.DataServices.Interfaces;
+﻿
+using IT.Business.Interfaces;
 using IT.Business.Models;
 using System.Reflection;
 
 namespace IT.Business.DataServices
 {
-    public class UserService: IUserServices
+    public class UserService: IUserService
     {
         private List<UserModel> user = new List<UserModel>();
         public List<UserModel> GetAll()
