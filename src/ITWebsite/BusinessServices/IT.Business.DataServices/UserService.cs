@@ -1,33 +1,38 @@
 ﻿
 using IT.Business.Interfaces;
 using IT.Business.Models;
+using IT.Data;
+using IT.Data.Models;
 using System.Reflection;
 
 namespace IT.Business.DataServices
 {
     public class UserService: IUserService
     {
-        private List<UserModel> user = new List<UserModel>();
+        private readonly ITWebsiteDbContext _dbContext;
+        public UserService(ITWebsiteDbContext dbContext)
+        {
+            _dbContext=dbContext;
+        }    
         public List<UserModel> GetAll()
         {
-            user.Add(new UserModel { id = 1, Name = "Azam Sherazi" });
-            user.Add(new UserModel { id = 2, Name = "Faris Sherazi" });
-            user.Add(new UserModel { id = 3, Name = "Hamad Sherazi" });
-            user.Add(new UserModel { id = 4, Name = "Haroon Sherazi" });
-            user.Add(new UserModel { id = 5, Name = "Jameela Sherazi" });
-            return user;
+            var allusers = _dbContext.users.ToList();
+            var userModels = allusers.Select(x => new UserModel { id = x.id, Name = x.Name }).ToList();
+            return userModels;
 
         }
         public void Add(UserModel model)
         {
-            user.Add(model);
+            _dbContext.users.Add(new User { id=model.id,Name=model.Name});
+            _dbContext.SaveChanges();
         }
         public void Delete(int id)
         {
-            var userToDelete= user.Where(x => x.id == id).FirstOrDefault();
+            var userToDelete= _dbContext.users.Where(x => x.id == id).FirstOrDefault();
             if(userToDelete != null)
             {
-                user.Remove(userToDelete);
+                _dbContext.users.Remove(userToDelete);
+                _dbContext.SaveChanges();
             }
            
         }

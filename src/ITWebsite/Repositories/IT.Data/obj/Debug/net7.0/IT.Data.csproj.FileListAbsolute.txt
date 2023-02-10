@@ -1,0 +1,17 @@
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\Repositories\IT.Data\bin\Debug\net7.0\IT.Data.deps.json
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\Repositories\IT.Data\bin\Debug\net7.0\IT.Data.runtimeconfig.json
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\Repositories\IT.Data\bin\Debug\net7.0\IT.Data.dll
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\Repositories\IT.Data\bin\Debug\net7.0\IT.Data.pdb
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\Repositories\IT.Data\bin\Debug\net7.0\IT.Data.Models.dll
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\Repositories\IT.Data\bin\Debug\net7.0\IT.Data.Models.pdb
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\Repositories\IT.Data\obj\Debug\net7.0\IT.Data.csproj.AssemblyReference.cache
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\Repositories\IT.Data\obj\Debug\net7.0\IT.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\Repositories\IT.Data\obj\Debug\net7.0\IT.Data.AssemblyInfoInputs.cache
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\Repositories\IT.Data\obj\Debug\net7.0\IT.Data.AssemblyInfo.cs
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\Repositories\IT.Data\obj\Debug\net7.0\IT.Data.csproj.CoreCompileInputs.cache
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\Repositories\IT.Data\obj\Debug\net7.0\IT.Data.csproj.CopyComplete
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\Repositories\IT.Data\obj\Debug\net7.0\IT.Data.dll
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\Repositories\IT.Data\obj\Debug\net7.0\refint\IT.Data.dll
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\Repositories\IT.Data\obj\Debug\net7.0\IT.Data.pdb
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\Repositories\IT.Data\obj\Debug\net7.0\IT.Data.genruntimeconfig.cache
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\Repositories\IT.Data\obj\Debug\net7.0\ref\IT.Data.dll

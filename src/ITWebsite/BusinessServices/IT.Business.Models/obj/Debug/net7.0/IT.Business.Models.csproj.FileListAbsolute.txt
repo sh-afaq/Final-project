@@ -1,0 +1,12 @@
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\BusinessServices\IT.Business.Models\bin\Debug\net7.0\IT.Business.Models.deps.json
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\BusinessServices\IT.Business.Models\bin\Debug\net7.0\IT.Business.Models.dll
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\BusinessServices\IT.Business.Models\bin\Debug\net7.0\IT.Business.Models.pdb
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\BusinessServices\IT.Business.Models\obj\Debug\net7.0\IT.Business.Models.csproj.AssemblyReference.cache
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\BusinessServices\IT.Business.Models\obj\Debug\net7.0\IT.Business.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\BusinessServices\IT.Business.Models\obj\Debug\net7.0\IT.Business.Models.AssemblyInfoInputs.cache
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\BusinessServices\IT.Business.Models\obj\Debug\net7.0\IT.Business.Models.AssemblyInfo.cs
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\BusinessServices\IT.Business.Models\obj\Debug\net7.0\IT.Business.Models.csproj.CoreCompileInputs.cache
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\BusinessServices\IT.Business.Models\obj\Debug\net7.0\IT.Business.Models.dll
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\BusinessServices\IT.Business.Models\obj\Debug\net7.0\refint\IT.Business.Models.dll
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\BusinessServices\IT.Business.Models\obj\Debug\net7.0\IT.Business.Models.pdb
+C:\Users\sabeesha\source\repos\Final-project\src\ITWebsite\BusinessServices\IT.Business.Models\obj\Debug\net7.0\ref\IT.Business.Models.dll

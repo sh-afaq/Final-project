@@ -18,7 +18,8 @@ namespace IT.Webapp
             builder.Services.AddDbContext<ITWebsiteDbContext>(
             options => options.UseSqlServer("Data Source=localhost;Database=ITWebsite;Integrated Security=SSPI;TrustServerCertificate=True;"));
             // all of custom configuration
-            builder.Services.AddSingleton<IUserService,UserService>();
+            builder.Services.AddScoped<IUserService,UserService>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

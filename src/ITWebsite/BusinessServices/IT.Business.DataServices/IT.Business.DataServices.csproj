@@ -7,12 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IT.Business.Interfaces\IT.Business.Interfaces.csproj" />
-    <ProjectReference Include="..\IT.Business.Models\IT.Business.Models.csproj" />
+    <Compile Remove="Implementations\**" />
+    <EmbeddedResource Remove="Implementations\**" />
+    <None Remove="Implementations\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Implementations\" />
+    <ProjectReference Include="..\..\Repositories\IT.Data.Models\IT.Data.Models.csproj" />
+    <ProjectReference Include="..\..\Repositories\IT.Data\IT.Data.csproj" />
+    <ProjectReference Include="..\IT.Business.Interfaces\IT.Business.Interfaces.csproj" />
+    <ProjectReference Include="..\IT.Business.Models\IT.Business.Models.csproj" />
   </ItemGroup>
 
 </Project>
