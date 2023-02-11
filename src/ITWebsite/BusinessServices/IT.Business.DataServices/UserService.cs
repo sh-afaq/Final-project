@@ -26,6 +26,16 @@ namespace IT.Business.DataServices
             _dbContext.users.Add(new User { id=model.id,Name=model.Name});
             _dbContext.SaveChanges();
         }
+        public void Update(UserModel model)
+        {
+            var entity = _dbContext.users.FirstOrDefault(x => x.id == model.id);
+            if (entity != null)
+            {
+                entity.Name = model.Name;
+                _dbContext.SaveChanges();
+            }
+            
+        }
         public void Delete(int id)
         {
             var userToDelete= _dbContext.users.Where(x => x.id == id).FirstOrDefault();
@@ -37,5 +47,6 @@ namespace IT.Business.DataServices
            
         }
 
+        
     }
 }

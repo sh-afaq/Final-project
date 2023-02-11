@@ -11,6 +11,7 @@ namespace IT.Business.Interfaces
     {
         public List<UserModel> GetAll();
         public void Add(UserModel model);
+        public void Update(UserModel model);
         public void Delete(int id);
     }
 }

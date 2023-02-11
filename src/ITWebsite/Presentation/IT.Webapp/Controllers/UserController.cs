@@ -69,11 +69,8 @@ namespace IT.Webapp.Controllers
         {
             try
             {
-                var user = _userService.GetAll().Where(x => x.id == model.id).FirstOrDefault();
-                if(user!=null)
-                {
-                    user.Name = model.Name;
-                }
+                _userService.Update(model);
+               
                 return RedirectToAction(nameof(Index));
             }
             catch
