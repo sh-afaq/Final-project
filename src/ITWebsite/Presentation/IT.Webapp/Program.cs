@@ -1,5 +1,4 @@
 using IT.Business.DataServices;
-
 using IT.Business.Interfaces;
 using IT.Data;
 using Microsoft.EntityFrameworkCore;
@@ -16,10 +15,10 @@ namespace IT.Webapp
             builder.Services.AddControllersWithViews();
             //configure entity framework
             builder.Services.AddDbContext<ITWebsiteDbContext>(
-            options => options.UseSqlServer("Data Source=localhost;Database=ITWebsite;Integrated Security=SSPI;TrustServerCertificate=True;"));
+            options => options.UseSqlServer("Data Source=HAIER-PC\\SQLEXPRESS;Database=ITWebsite;Integrated Security=SSPI;TrustServerCertificate=True;"));
             // all of custom configuration
             builder.Services.AddScoped<IUserService,UserService>();
-
+            
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
