@@ -18,7 +18,7 @@ namespace IT.Webapp
             options => options.UseSqlServer("Data Source=HAIER-PC\\SQLEXPRESS;Database=ITWebsite;Integrated Security=SSPI;TrustServerCertificate=True;"));
             // all of custom configuration
             builder.Services.AddScoped<IUserService,UserService>();
-            
+            //this is
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
