@@ -17,15 +17,14 @@ namespace IT.Webapp.Controllers
         // GET: UserController
         public ActionResult Index(string? search)
         {
-            List<UserModel> users = null;
+            List<UserModel> users ;
            if(search==null)
             {
                users= _userService.GetAll();
             }
             else
             {
-                users = _userService.GetAll().Where(x => x.Name.ToLower()
-                .Contains(search.Trim().ToLower())).ToList();
+                users = _userService.Search(search).ToList();
             }
             return View(users);
         }

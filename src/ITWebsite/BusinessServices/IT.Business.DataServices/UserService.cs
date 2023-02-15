@@ -17,13 +17,31 @@ namespace IT.Business.DataServices
         public List<UserModel> GetAll()
         {
             var allusers = _dbContext.users.ToList();
-            var userModels = allusers.Select(x => new UserModel { id = x.id, Name = x.Name }).ToList();
+            var userModels = allusers.Select(x => new UserModel 
+            { id = x.id, Name = x.Name ,Email=x.Email, Password=x.Password
+            }).ToList();
             return userModels;
 
         }
+        public List<UserModel> Search(string searchTerm)
+        {
+            searchTerm = searchTerm.Trim().ToLower();
+            var allusers = _dbContext.users.Where(x => x.Name.ToLower()
+                .Contains(searchTerm) ||
+                x.Email.ToLower().Contains(searchTerm)).ToList();
+            var userModels = allusers.Select(x => new UserModel
+            {
+                id = x.id,
+                Name = x.Name,
+                Email = x.Email,
+                Password = x.Password
+            }).ToList();
+            return userModels;
+        }
         public void Add(UserModel model)
         {
-            _dbContext.users.Add(new User { id=model.id,Name=model.Name});
+            _dbContext.users.Add(new User
+            { id=model.id,Name=model.Name,Email=model.Email,Password=model.Password});
             _dbContext.SaveChanges();
         }
         public void Update(UserModel model)
@@ -32,6 +50,8 @@ namespace IT.Business.DataServices
             if (entity != null)
             {
                 entity.Name = model.Name;
+                entity.Email= model.Email;
+                entity.Password = model.Password;
                 _dbContext.SaveChanges();
             }
             

@@ -1,7 +1,9 @@
 using IT.Business.DataServices;
 using IT.Business.Interfaces;
 using IT.Data;
+using IT.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
+using System.Configuration;
 
 namespace IT.Webapp
 {
@@ -13,11 +15,8 @@ namespace IT.Webapp
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            //configure entity framework
-            builder.Services.AddDbContext<ITWebsiteDbContext>(
-            options => options.UseSqlServer("Data Source=HAIER-PC\\SQLEXPRESS;Database=ITWebsite;Integrated Security=SSPI;TrustServerCertificate=True;"));
-            // all of custom configuration
-            builder.Services.AddScoped<IUserService,UserService>();
+            //ALL APPLICATION DI CONFIGURATIONS
+            builder.Services.AppDISetup(builder.Configuration);
             //this is
             var app = builder.Build();
 

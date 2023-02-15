@@ -11,6 +11,7 @@
           "IT.Business.DataServices": "1.0.0",
           "IT.Business.Models": "1.0.0",
           "IT.Data": "1.0.0",
+          "IT.DependencyInjection": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "7.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.2",
@@ -2313,6 +2314,16 @@
         "runtime": {
           "IT.Data.Models.dll": {}
         }
+      },
+      "IT.DependencyInjection/1.0.0": {
+        "dependencies": {
+          "IT.Business.DataServices": "1.0.0",
+          "IT.Data": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "IT.DependencyInjection.dll": {}
+        }
       }
     }
   },
@@ -3603,6 +3614,11 @@
       "sha512": ""
     },
     "IT.Data.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IT.DependencyInjection/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -3705,6 +3705,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "IT.Data.Interfaces": "1.0.0",
           "IT.Data.Models": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.2"
         },
@@ -3715,6 +3716,19 @@
           "bin/placeholder/IT.Data.dll": {}
         }
       },
+      "IT.Data.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "IT.Data.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IT.Data.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IT.Data.Interfaces.dll": {}
+        }
+      },
       "IT.Data.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -3723,6 +3737,21 @@
         },
         "runtime": {
           "bin/placeholder/IT.Data.Models.dll": {}
+        }
+      },
+      "IT.DependencyInjection/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "IT.Business.DataServices": "1.0.0",
+          "IT.Data": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IT.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IT.DependencyInjection.dll": {}
         }
       }
     }
@@ -10683,10 +10712,20 @@
       "path": "../../Repositories/IT.Data/IT.Data.csproj",
       "msbuildProject": "../../Repositories/IT.Data/IT.Data.csproj"
     },
+    "IT.Data.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../../Repositories/IT.Data.Interfaces/IT.Data.Interfaces.csproj",
+      "msbuildProject": "../../Repositories/IT.Data.Interfaces/IT.Data.Interfaces.csproj"
+    },
     "IT.Data.Models/1.0.0": {
       "type": "project",
       "path": "../../Repositories/IT.Data.Models/IT.Data.Models.csproj",
       "msbuildProject": "../../Repositories/IT.Data.Models/IT.Data.Models.csproj"
+    },
+    "IT.DependencyInjection/1.0.0": {
+      "type": "project",
+      "path": "../../Infrastructure/IT.DependencyInjection/IT.DependencyInjection.csproj",
+      "msbuildProject": "../../Infrastructure/IT.DependencyInjection/IT.DependencyInjection.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10694,6 +10733,7 @@
       "IT.Business.DataServices >= 1.0.0",
       "IT.Business.Models >= 1.0.0",
       "IT.Data >= 1.0.0",
+      "IT.DependencyInjection >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.2",
@@ -10732,6 +10772,9 @@
             },
             "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\BusinessServices\\IT.Business.Models\\IT.Business.Models.csproj": {
               "projectPath": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\BusinessServices\\IT.Business.Models\\IT.Business.Models.csproj"
+            },
+            "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Infrastructure\\IT.DependencyInjection\\IT.DependencyInjection.csproj": {
+              "projectPath": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Infrastructure\\IT.DependencyInjection\\IT.DependencyInjection.csproj"
             },
             "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data\\IT.Data.csproj": {
               "projectPath": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data\\IT.Data.csproj"

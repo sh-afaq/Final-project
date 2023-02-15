@@ -4,6 +4,65 @@
     "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data\\IT.Data.csproj": {}
   },
   "projects": {
+    "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data.Interfaces\\IT.Data.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data.Interfaces\\IT.Data.Interfaces.csproj",
+        "projectName": "IT.Data.Interfaces",
+        "projectPath": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data.Interfaces\\IT.Data.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\zohaib\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\zohaib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\nuget.frameworks": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data.Models\\IT.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data.Models\\IT.Data.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data.Models\\IT.Data.Models.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -83,6 +142,9 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data.Interfaces\\IT.Data.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data.Interfaces\\IT.Data.Interfaces.csproj"
+              },
               "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data.Models\\IT.Data.Models.csproj": {
                 "projectPath": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data.Models\\IT.Data.Models.csproj"
               }

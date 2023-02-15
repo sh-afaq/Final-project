@@ -1055,6 +1055,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "IT.Data.Interfaces": "1.0.0",
           "IT.Data.Models": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.2"
         },
@@ -1063,6 +1064,19 @@
         },
         "runtime": {
           "bin/placeholder/IT.Data.dll": {}
+        }
+      },
+      "IT.Data.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "IT.Data.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IT.Data.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IT.Data.Interfaces.dll": {}
         }
       },
       "IT.Data.Models/1.0.0": {
@@ -3233,6 +3247,11 @@
       "type": "project",
       "path": "../../Repositories/IT.Data/IT.Data.csproj",
       "msbuildProject": "../../Repositories/IT.Data/IT.Data.csproj"
+    },
+    "IT.Data.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../../Repositories/IT.Data.Interfaces/IT.Data.Interfaces.csproj",
+      "msbuildProject": "../../Repositories/IT.Data.Interfaces/IT.Data.Interfaces.csproj"
     },
     "IT.Data.Models/1.0.0": {
       "type": "project",
