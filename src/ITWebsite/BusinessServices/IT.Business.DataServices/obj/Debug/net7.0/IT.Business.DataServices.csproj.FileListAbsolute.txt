@@ -40,3 +40,5 @@ C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Business
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\BusinessServices\IT.Business.DataServices\obj\Debug\net7.0\refint\IT.Business.DataServices.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\BusinessServices\IT.Business.DataServices\obj\Debug\net7.0\IT.Business.DataServices.pdb
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\BusinessServices\IT.Business.DataServices\obj\Debug\net7.0\ref\IT.Business.DataServices.dll
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\BusinessServices\IT.Business.DataServices\bin\Debug\net7.0\IT.Data.Interfaces.dll
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\BusinessServices\IT.Business.DataServices\bin\Debug\net7.0\IT.Data.Interfaces.pdb

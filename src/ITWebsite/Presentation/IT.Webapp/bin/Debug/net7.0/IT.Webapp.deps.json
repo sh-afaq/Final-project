@@ -2303,11 +2303,20 @@
       },
       "IT.Data/1.0.0": {
         "dependencies": {
+          "IT.Data.Interfaces": "1.0.0",
           "IT.Data.Models": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.2"
         },
         "runtime": {
           "IT.Data.dll": {}
+        }
+      },
+      "IT.Data.Interfaces/1.0.0": {
+        "dependencies": {
+          "IT.Data.Models": "1.0.0"
+        },
+        "runtime": {
+          "IT.Data.Interfaces.dll": {}
         }
       },
       "IT.Data.Models/1.0.0": {
@@ -3609,6 +3618,11 @@
       "sha512": ""
     },
     "IT.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IT.Data.Interfaces/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

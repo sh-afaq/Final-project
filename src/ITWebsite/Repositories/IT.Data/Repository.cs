@@ -8,10 +8,10 @@ namespace IT.Data
     {
         private readonly ITWebsiteDbContext _context;
         protected readonly DbSet<TEntity> _dbset;
-        public Repository(ITWebsiteDbContext context, DbSet<TEntity> dbset)
+        public Repository(ITWebsiteDbContext context)
         {
             _context = context;
-            _dbset = dbset;
+            _dbset = context.Set<TEntity>();
 
 
         }

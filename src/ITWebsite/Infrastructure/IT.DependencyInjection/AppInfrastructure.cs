@@ -1,6 +1,7 @@
 ﻿using IT.Business.DataServices;
 using IT.Business.Interfaces;
 using IT.Data;
+using IT.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,6 +17,8 @@ namespace IT.DependencyInjection
             //configure entity framework
             services.AddDbContext<ITWebsiteDbContext>(
             options => options.UseSqlServer(configuration.GetConnectionString("DbConnection")));
+            //repositories configuration
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             // all of custom configuration
             services.AddScoped<IUserService, UserService>();
 

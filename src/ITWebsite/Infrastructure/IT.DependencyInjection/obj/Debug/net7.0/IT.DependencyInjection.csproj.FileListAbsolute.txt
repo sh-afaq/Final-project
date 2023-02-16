@@ -21,3 +21,5 @@ C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastr
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\obj\Debug\net7.0\refint\IT.DependencyInjection.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\obj\Debug\net7.0\IT.DependencyInjection.pdb
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\obj\Debug\net7.0\ref\IT.DependencyInjection.dll
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\bin\Debug\net7.0\IT.Data.Interfaces.dll
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\bin\Debug\net7.0\IT.Data.Interfaces.pdb

@@ -1,0 +1,15 @@
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data.Interfaces\bin\Debug\net7.0\IT.Data.Interfaces.deps.json
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data.Interfaces\bin\Debug\net7.0\IT.Data.Interfaces.dll
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data.Interfaces\bin\Debug\net7.0\IT.Data.Interfaces.pdb
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data.Interfaces\bin\Debug\net7.0\IT.Data.Models.dll
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data.Interfaces\bin\Debug\net7.0\IT.Data.Models.pdb
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data.Interfaces\obj\Debug\net7.0\IT.Data.Interfaces.csproj.AssemblyReference.cache
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data.Interfaces\obj\Debug\net7.0\IT.Data.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data.Interfaces\obj\Debug\net7.0\IT.Data.Interfaces.AssemblyInfoInputs.cache
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data.Interfaces\obj\Debug\net7.0\IT.Data.Interfaces.AssemblyInfo.cs
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data.Interfaces\obj\Debug\net7.0\IT.Data.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data.Interfaces\obj\Debug\net7.0\IT.Data.Interfaces.csproj.CopyComplete
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data.Interfaces\obj\Debug\net7.0\IT.Data.Interfaces.dll
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data.Interfaces\obj\Debug\net7.0\refint\IT.Data.Interfaces.dll
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data.Interfaces\obj\Debug\net7.0\IT.Data.Interfaces.pdb
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data.Interfaces\obj\Debug\net7.0\ref\IT.Data.Interfaces.dll
