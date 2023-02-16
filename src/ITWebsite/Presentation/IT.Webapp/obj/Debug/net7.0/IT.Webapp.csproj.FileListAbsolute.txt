@@ -291,6 +291,8 @@ C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presenta
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.Webapp.runtimeconfig.json
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.Webapp.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.Webapp.pdb
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Azure.Identity.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Humanizer.dll
@@ -538,11 +540,15 @@ C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presenta
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.Business.Interfaces.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.Business.Models.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.Data.dll
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.Data.Interfaces.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.Data.Models.dll
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.DependencyInjection.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.Business.DataServices.pdb
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.Business.Models.pdb
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.DependencyInjection.pdb
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.Data.pdb
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.Business.Interfaces.pdb
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.Data.Interfaces.pdb
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.Data.Models.pdb
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\obj\Debug\net7.0\IT.Webapp.csproj.AssemblyReference.cache
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\obj\Debug\net7.0\IT.Webapp.GeneratedMSBuildEditorConfig.editorconfig
@@ -568,7 +574,3 @@ C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presenta
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\obj\Debug\net7.0\IT.Webapp.pdb
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\obj\Debug\net7.0\IT.Webapp.genruntimeconfig.cache
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\obj\Debug\net7.0\ref\IT.Webapp.dll
-C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.DependencyInjection.dll
-C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.DependencyInjection.pdb
-C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.Data.Interfaces.dll
-C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\IT.Data.Interfaces.pdb

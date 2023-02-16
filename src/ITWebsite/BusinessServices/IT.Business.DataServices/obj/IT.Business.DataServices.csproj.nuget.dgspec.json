@@ -52,6 +52,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -98,6 +104,9 @@
             "projectReferences": {
               "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\BusinessServices\\IT.Business.Models\\IT.Business.Models.csproj": {
                 "projectPath": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\BusinessServices\\IT.Business.Models\\IT.Business.Models.csproj"
+              },
+              "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data.Models\\IT.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data.Models\\IT.Data.Models.csproj"
               }
             }
           }

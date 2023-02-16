@@ -5,11 +5,13 @@ C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastr
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\bin\Debug\net7.0\IT.Business.Interfaces.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\bin\Debug\net7.0\IT.Business.Models.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\bin\Debug\net7.0\IT.Data.dll
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\bin\Debug\net7.0\IT.Data.Interfaces.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\bin\Debug\net7.0\IT.Data.Models.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\bin\Debug\net7.0\IT.Business.DataServices.pdb
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\bin\Debug\net7.0\IT.Data.pdb
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\bin\Debug\net7.0\IT.Business.Interfaces.pdb
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\bin\Debug\net7.0\IT.Business.Models.pdb
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\bin\Debug\net7.0\IT.Data.Interfaces.pdb
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\bin\Debug\net7.0\IT.Data.Models.pdb
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\obj\Debug\net7.0\IT.DependencyInjection.csproj.AssemblyReference.cache
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\obj\Debug\net7.0\IT.DependencyInjection.GeneratedMSBuildEditorConfig.editorconfig
@@ -21,5 +23,3 @@ C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastr
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\obj\Debug\net7.0\refint\IT.DependencyInjection.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\obj\Debug\net7.0\IT.DependencyInjection.pdb
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\obj\Debug\net7.0\ref\IT.DependencyInjection.dll
-C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\bin\Debug\net7.0\IT.Data.Interfaces.dll
-C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Infrastructure\IT.DependencyInjection\bin\Debug\net7.0\IT.Data.Interfaces.pdb

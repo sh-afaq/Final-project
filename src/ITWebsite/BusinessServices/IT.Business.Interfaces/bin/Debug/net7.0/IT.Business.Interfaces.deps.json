@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "IT.Business.Interfaces/1.0.0": {
         "dependencies": {
-          "IT.Business.Models": "1.0.0"
+          "IT.Business.Models": "1.0.0",
+          "IT.Data.Models": "1.0.0"
         },
         "runtime": {
           "IT.Business.Interfaces.dll": {}
@@ -17,6 +18,11 @@
       "IT.Business.Models/1.0.0": {
         "runtime": {
           "IT.Business.Models.dll": {}
+        }
+      },
+      "IT.Data.Models/1.0.0": {
+        "runtime": {
+          "IT.Data.Models.dll": {}
         }
       }
     }
@@ -28,6 +34,11 @@
       "sha512": ""
     },
     "IT.Business.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IT.Data.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

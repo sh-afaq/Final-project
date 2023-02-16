@@ -12,6 +12,7 @@ namespace IT.Data
         {
         }
         public DbSet<User> users { get; set; }
-        
+        public DbSet<Blog> blogs { get; set; }
+
     }
 }

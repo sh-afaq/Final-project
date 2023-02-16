@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "gUNYMIzC5K6SyYEbYcgmwFY1h+7YGIVSmSwAM4Q6HvS0aKCcmnXdlMIsMenNEH8qGTG203kjOnzgMAy8P0UHEQ==",
+  "dgSpecHash": "gqiJlFL2vZ/Q29SzcAanttkcsgafzF4yL+ETn8qByr3Yhu5FCl4G3m0YPBzAr3WZWy5ZA4+xSgBlDIxHGjzOdw==",
   "success": true,
   "projectFilePath": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\IT.Webapp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\zohaib\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\zohaib\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\zohaib\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\zohaib\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\zohaib\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

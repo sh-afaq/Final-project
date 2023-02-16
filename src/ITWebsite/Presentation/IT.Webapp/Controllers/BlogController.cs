@@ -1,4 +1,5 @@
-﻿using IT.Business.Models;
+﻿using IT.Business.Interfaces;
+using IT.Business.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,12 +7,17 @@ namespace IT.Webapp.Controllers
 {
     public class BlogController : Controller
     {
+        private readonly IBlogService _blogService;
+        public BlogController(IBlogService blogService)
+        {
+            _blogService= blogService;
+        }
         // GET: BlogController
         public ActionResult Index()
         {
-            List<BlogModels> blog = new List<BlogModels>();
-            blog.Add(new BlogModels { Id=1,Name="Cloud Migration", Description="WAY TO CLOUD MIGRATION"});
-            return View(blog);
+            var blogModel=new BlogModel { Name= "blog1"};
+            var models=_blogService.GetAll();
+            return View(models);
 
         }
 

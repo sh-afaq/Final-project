@@ -11,6 +11,16 @@
         "runtime": {
           "bin/placeholder/IT.Business.Models.dll": {}
         }
+      },
+      "IT.Data.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/IT.Data.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IT.Data.Models.dll": {}
+        }
       }
     }
   },
@@ -19,11 +29,17 @@
       "type": "project",
       "path": "../IT.Business.Models/IT.Business.Models.csproj",
       "msbuildProject": "../IT.Business.Models/IT.Business.Models.csproj"
+    },
+    "IT.Data.Models/1.0.0": {
+      "type": "project",
+      "path": "../../Repositories/IT.Data.Models/IT.Data.Models.csproj",
+      "msbuildProject": "../../Repositories/IT.Data.Models/IT.Data.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "IT.Business.Models >= 1.0.0"
+      "IT.Business.Models >= 1.0.0",
+      "IT.Data.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -55,6 +71,9 @@
           "projectReferences": {
             "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\BusinessServices\\IT.Business.Models\\IT.Business.Models.csproj": {
               "projectPath": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\BusinessServices\\IT.Business.Models\\IT.Business.Models.csproj"
+            },
+            "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data.Models\\IT.Data.Models.csproj": {
+              "projectPath": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data.Models\\IT.Data.Models.csproj"
             }
           }
         }

@@ -19,7 +19,9 @@ C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Reposito
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data\bin\Debug\net7.0\IT.Data.runtimeconfig.json
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data\bin\Debug\net7.0\IT.Data.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data\bin\Debug\net7.0\IT.Data.pdb
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data\bin\Debug\net7.0\IT.Data.Interfaces.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data\bin\Debug\net7.0\IT.Data.Models.dll
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data\bin\Debug\net7.0\IT.Data.Interfaces.pdb
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data\bin\Debug\net7.0\IT.Data.Models.pdb
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data\obj\Debug\net7.0\IT.Data.csproj.AssemblyReference.cache
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data\obj\Debug\net7.0\IT.Data.GeneratedMSBuildEditorConfig.editorconfig
@@ -32,5 +34,3 @@ C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Reposito
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data\obj\Debug\net7.0\IT.Data.pdb
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data\obj\Debug\net7.0\IT.Data.genruntimeconfig.cache
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data\obj\Debug\net7.0\ref\IT.Data.dll
-C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data\bin\Debug\net7.0\IT.Data.Interfaces.dll
-C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Repositories\IT.Data\bin\Debug\net7.0\IT.Data.Interfaces.pdb

@@ -18,9 +18,11 @@ namespace IT.DependencyInjection
             services.AddDbContext<ITWebsiteDbContext>(
             options => options.UseSqlServer(configuration.GetConnectionString("DbConnection")));
             //repositories configuration
-            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IRepository<>),typeof(Repository<>));
             // all of custom configuration
             services.AddScoped<IUserService, UserService>();
+            // automapper configuration
+            services.AddAutoMapper(typeof(BusinessEntityMappings));
 
         }
 

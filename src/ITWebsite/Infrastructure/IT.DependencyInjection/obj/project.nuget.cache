@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "gskBV7x9sw03ta22jJWWFC3I1HeVERqhr1e0eZc6XtAK6cJtJgj+wv7Yf305nlw7CXF/kjUrPpwLDWcO+VyJWg==",
+  "dgSpecHash": "IEse5Tx+1pCZ8cD3jYGOD69lvS6ic5xxVOK5jVGgirKdSKG9naKYS8qQ7a5qYFwf5Ix9p1oF4O53yXk1zyIPvg==",
   "success": true,
   "projectFilePath": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Infrastructure\\IT.DependencyInjection\\IT.DependencyInjection.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\zohaib\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\zohaib\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\zohaib\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\zohaib\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\zohaib\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\zohaib\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\zohaib\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\zohaib\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
     "C:\\Users\\zohaib\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.0.1\\microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "C:\\Users\\zohaib\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.2\\microsoft.entityframeworkcore.7.0.2.nupkg.sha512",
