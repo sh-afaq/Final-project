@@ -16,6 +16,7 @@ namespace IT.Webapp.Controllers
         public ActionResult Index()
         {
             var blogModel=new BlogModel { Name= "blog1"};
+            _blogService.Add(blogModel);
             var models=_blogService.GetAll();
             return View(models);
 

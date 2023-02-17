@@ -21,6 +21,7 @@ namespace IT.DependencyInjection
             services.AddScoped(typeof(IRepository<>),typeof(Repository<>));
             // all of custom configuration
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IBlogService, BlogService>();
             // automapper configuration
             services.AddAutoMapper(typeof(BusinessEntityMappings));
 

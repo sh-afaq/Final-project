@@ -14,6 +14,7 @@ namespace IT.Business.DataServices
         public BusinessEntityMappings() 
         { 
         CreateMap<UserModel,User>().ReverseMap();
+        CreateMap<BlogModel, Blog>().ReverseMap();
         }
     }
 }
