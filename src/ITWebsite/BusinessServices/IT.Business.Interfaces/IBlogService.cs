@@ -4,6 +4,6 @@ namespace IT.Business.Interfaces
 {
     public interface IBlogService:IGenericService<BlogModel>
     {
-        //public List<BlogModel> Search(string searchTerm);
+        public List<BlogModel> Search(string searchTerm);
     }
 }

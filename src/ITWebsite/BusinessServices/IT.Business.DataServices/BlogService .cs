@@ -14,7 +14,7 @@ namespace IT.Business.DataServices
        
         public BlogService(IRepository<Blog>  repository,IMapper mapper):base (repository,mapper)
         {
-            _repository=repository;
+           _repository=repository;
         }
         public List<BlogModel> Search(string searchTerm)
         {
@@ -29,8 +29,5 @@ namespace IT.Business.DataServices
             }).ToList();
             return blogModels;
             }
-
-
-
         }
 }

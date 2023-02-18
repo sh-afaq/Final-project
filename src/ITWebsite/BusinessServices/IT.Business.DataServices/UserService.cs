@@ -21,13 +21,13 @@ namespace IT.Business.DataServices
             searchTerm = searchTerm.Trim().ToLower();
             var allusers = _repository.Get(x => x.Name.ToLower()
                 .Contains(searchTerm) ||
-                x.Email.ToLower().Contains(searchTerm)).ToList();
+                x.Description.ToLower().Contains(searchTerm)).ToList();
             var userModels = allusers.Select(x => new UserModel
             {
                 id = x.Id,
                 Name = x.Name,
-                Email = x.Email,
-                Password = x.Password
+                Description = x.Description
+                
             }).ToList();
             return userModels;
         }
