@@ -47,6 +47,11 @@ namespace IT.Business.DataServices
             throw new NotImplementedException();
         }
 
-        
+        public TModel GetById(int id)
+        {
+            var entity = _repository.Get(x=>x.Id==id).FirstOrDefault();
+            var models = _mapper.Map<TModel>(entity);
+            return models;
+        }
     }
 }

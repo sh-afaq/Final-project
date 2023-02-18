@@ -4,11 +4,9 @@
     ViewData["Title"] = "Blog";
 }
 
-<h1>Index</h1>
+<h1>Blog</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+
 <table class="table">
     <thead>
         <tr>
@@ -37,11 +35,14 @@
                     @Html.DisplayFor(modelItem => item.Description)
                 </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Edit", "Edit", new {  id=item.Id}) |
+               @* @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+                @Html.ActionLink("Delete", "Delete", new {  id=item.Id})
             </td>
         </tr>
 }
     </tbody>
 </table>
+<p>
+    <a asp-action="Create"><button type="button" style = "position:relative; left:950px;"class="btn btn-primary "> Create New</button ></a>
+</p>

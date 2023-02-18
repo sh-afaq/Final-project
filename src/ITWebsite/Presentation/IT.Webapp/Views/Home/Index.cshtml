@@ -1,8 +1,261 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<head>
+    <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
 
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+
+    </script>
+</head>
+<style>
+{box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  /*transition: 0.6s ease;*/
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: orange;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: orange;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards; 
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+</style>
 <div class="text-center">
     <h2 class="display-4"><b>Welcome To IT Consulting Services</b></h2>
+</div>
 
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+     @*<img src='@Url.Content("~/images/img1.jpg")' />*@
+    <img src="~/images/img1.jpg" style="width:100%">
+    <div class="text"><b>Cloud Solutions</b></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="./images/img2.jpg" style="width:100%">
+    <div class="text"><b>Data Analysis</b></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="./images/img3.jpeg" style="width:100%">
+    <div class="text"><b>Bespoke Software Development</b></div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col">
+       <h2>About Us</h2>
+     </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col">
+      Our mission is to help our customers achieve more with less. Do you have spiraling IT costs and 
+      still don`t get the talent or solution your business needs? Likely, suppliers are not creating your
+      digital transformation that`s aligned with your business strategy.
+      At DigyCorp, one of our first tasks is to understand our customer`s business roadmap. Armed with that, 
+      we analyze specific product requirements and only then provided digital solutions. This means we get t
+      hings right the first time for our customers. Coupling that with our highly talented globally 
+      sourced staff at competitive rates, we truly believe we can help our customers achieve more with less.
+      <br />
+    </div>
+    <div class="col">
+      @*<img src="~/images/img6.jpg" style="width:70%"> *@   
+    </div>
+  </div>
+  <br />
+  <div class="row align-items-start">
+          <div class="col">
+             <b>Our leaders:<br />
+             Tina Adam (CEO & Founder)</b>
+              <br />
+             Tina strives to give a competitive business edge to DigyCorp`s clients through automation and disruptive
+             digital change. 
+         </div>
+        <div class="col">
+          <img src="~/images/img5.jpg" style="width:70%">    
+        </div>
+  </div>
+  <br />
+  <div class="row align-items-start">
+      <div class="col">
+       <b> Adam Smith (CTO)</b>
+          <br />
+          Adam has 20+ years of experience driving complex digital transformations for international projects.
+          
+     </div>
+    <div class="col">
+      <img src="~/images/img6.jpg" style="width:70%">    
+    </div>
+    
+  </div>
+  <br />
+  <div class="row align-items-start">
+      <div class="col">
+        <b>Our Areas of expertise</b>
+          <br />
+           ->IoT solutions<br />
+           ->Migration from On-Premises<br />
+           ->Cloud-first solutions<br />
+           ->BI reporting<br />
+           ->Machine learning and AI<br />
+           ->Modern Data Platform
+          
+     </div>
+    <div class="col">
+      @*<img src="~/images/img6.jpg" style="width:70%">*@    
+    </div>
+    
+  </div>
+  <br />
+  <div class="row align-items-start">
+      <div class="col">
+        <b>Our Quality Clientele</b><br />
+          We have implemented significant software deliveries for our clients below
+          . For example at National Grid, we delivered complex mission critical 
+          systems running a 
+          Product delivery cross cutting 4 products having complex interdependencies 
+          with 4 scrum teams totalling 50+ staff.
+     </div>
+    <div class="col">
+      <img src="~/images/img7.jpeg" style="width:70%">    
+    </div>
+    <div class="col">
+      <img src="~/images/img8.png" style="width:70%">    
+    </div>
+    <div class="col">
+      <img src="~/images/img9.png" style="width:70%">    
+    </div>
+    
+  </div>
 </div>

@@ -13,6 +13,42 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\wwwroot\\images\\img1.jpg",
+      "PackagePath": "staticwebassets\\images\\img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\wwwroot\\images\\img2.jpg",
+      "PackagePath": "staticwebassets\\images\\img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\wwwroot\\images\\img3.jpeg",
+      "PackagePath": "staticwebassets\\images\\img3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\wwwroot\\images\\img4.jpeg",
+      "PackagePath": "staticwebassets\\images\\img4.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\wwwroot\\images\\img5.jpg",
+      "PackagePath": "staticwebassets\\images\\img5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\wwwroot\\images\\img6.jpg",
+      "PackagePath": "staticwebassets\\images\\img6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\wwwroot\\images\\img7.jpeg",
+      "PackagePath": "staticwebassets\\images\\img7.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\wwwroot\\images\\img8.png",
+      "PackagePath": "staticwebassets\\images\\img8.png"
+    },
+    {
+      "Id": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\wwwroot\\images\\img9.png",
+      "PackagePath": "staticwebassets\\images\\img9.png"
+    },
+    {
       "Id": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

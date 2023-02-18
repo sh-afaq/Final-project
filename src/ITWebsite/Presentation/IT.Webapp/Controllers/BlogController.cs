@@ -13,11 +13,9 @@ namespace IT.Webapp.Controllers
             _blogService= blogService;
         }
         // GET: BlogController
-        public ActionResult Index()
+        public ActionResult Index(string? search)
         {
-            var blogModel=new BlogModel { Name= "blog1"};
-            _blogService.Add(blogModel);
-            var models=_blogService.GetAll();
+            var models = _blogService.GetAll();
             return View(models);
 
         }
@@ -37,10 +35,11 @@ namespace IT.Webapp.Controllers
         // POST: BlogController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(BlogModel model)
         {
             try
             {
+                _blogService.Add(model);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -52,16 +51,18 @@ namespace IT.Webapp.Controllers
         // GET: BlogController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var blogmodel = _blogService.GetById(id);
+            return View(blogmodel);
         }
 
         // POST: BlogController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(BlogModel model)
         {
             try
             {
+                _blogService.Update(model);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -73,22 +74,18 @@ namespace IT.Webapp.Controllers
         // GET: BlogController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
-        }
-
-        // POST: BlogController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
             try
             {
+                _blogService.Delete(id);
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
                 return View();
             }
+           
         }
+
+        
     }
 }

@@ -19,6 +19,7 @@ html {
 
 body {
   margin-bottom: 60px;
+ /* background-color:dodgerblue;*/
 }
 .container-fluid {
     background-color: #ADD8E6;
@@ -26,4 +27,11 @@ body {
 }
 .navbar-brand {
     color: #FFFFFF;
+   
+}
+.footer {
+    background-color: cornflowerblue;
+    color:white;
+    text-align:center;
+    width:100%;
 }

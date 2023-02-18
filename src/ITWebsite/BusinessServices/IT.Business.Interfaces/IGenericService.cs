@@ -5,6 +5,7 @@ namespace IT.Business.Interfaces
     {
 
         public List<TModel> GetAll();
+        public TModel GetById(int id);
         public List<TModel> Search(string searchTerm);
         public void Add(TModel model);
         public void Update(TModel model);
