@@ -15,8 +15,20 @@ namespace IT.Webapp.Controllers
         // GET: BlogController
         public ActionResult Index(string? search)
         {
-            var models = _blogService.GetAll();
-            return View(models);
+
+            //var models = _blogService.GetAll();
+
+            //return View(models);
+            List<BlogModel> blogs;
+            if (search == null)
+            {
+               blogs = _blogService.GetAll();
+            }
+            else
+            {
+               blogs = _blogService.Search(search).ToList();
+            }
+            return View(blogs);
 
         }
 

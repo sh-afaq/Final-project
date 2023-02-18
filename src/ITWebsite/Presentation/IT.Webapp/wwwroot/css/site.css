@@ -30,8 +30,20 @@ body {
    
 }
 .footer {
-    background-color: cornflowerblue;
-    color:white;
+    background-color: lightblue;
+    color:black;
     text-align:center;
     width:100%;
+}
+.alignment {
+  
+    left: 950px;
+    position: relative;
+}
+ .container-fluid {
+    background-color: lightblue;
+}
+.text
+{
+    color:blue;
 }

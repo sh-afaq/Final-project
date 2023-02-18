@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hKmLwvjcqhxJBkRjUl3icNdljqtot3tpB0ljh49lwmU=",
+  "Hash": "KquSyJux9Gw+S3fEQoDtAKdG51Z7A9CKPQc9nxxqOTs=",
   "Source": "IT.Webapp",
   "BasePath": "_content/IT.Webapp",
   "Mode": "Default",
@@ -236,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\img9.png"
+    },
+    {
+      "Identity": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\wwwroot\\images\\top-5-trend.png",
+      "SourceId": "IT.Webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\wwwroot\\",
+      "BasePath": "_content/IT.Webapp",
+      "RelativePath": "images/top-5-trend.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\top-5-trend.png"
     },
     {
       "Identity": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\wwwroot\\js\\site.js",
