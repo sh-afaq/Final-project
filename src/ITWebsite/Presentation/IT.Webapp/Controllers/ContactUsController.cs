@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿
 using Microsoft.AspNetCore.Mvc;
 using IT.Business.Models;
+using Microsoft.AspNetCore.Authorization;
+
 namespace IT.Webapp.Controllers
 {
     public class ContactUsController : Controller
     {
+        [Authorize]
         // GET: ContactUsController
         public ActionResult Index()
         {

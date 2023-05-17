@@ -1,10 +1,12 @@
 ﻿using IT.Business.Interfaces;
 using IT.Business.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IT.Webapp.Controllers
 {
+    [Authorize]
     public class BlogController : Controller
     {
         private readonly IBlogService _blogService;

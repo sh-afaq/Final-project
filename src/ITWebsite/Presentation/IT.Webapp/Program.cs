@@ -1,9 +1,6 @@
-using IT.Business.DataServices;
-using IT.Business.Interfaces;
-using IT.Data;
+
 using IT.DependencyInjection;
-using Microsoft.EntityFrameworkCore;
-using System.Configuration;
+
 
 namespace IT.Webapp
 {
@@ -32,6 +29,7 @@ namespace IT.Webapp
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

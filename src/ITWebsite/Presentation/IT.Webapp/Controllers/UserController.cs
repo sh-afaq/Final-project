@@ -1,12 +1,13 @@
 ﻿
 using IT.Business.Interfaces;
 using IT.Business.Models;
-
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
 namespace IT.Webapp.Controllers
 {
+    [Authorize]
     public class UserController : Controller
     {
         private readonly IUserService _userService;
