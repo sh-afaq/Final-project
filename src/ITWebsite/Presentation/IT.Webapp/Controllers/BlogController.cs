@@ -17,10 +17,12 @@ namespace IT.Webapp.Controllers
         // GET: BlogController
         public ActionResult Index(string? search)
         {
-
+            //this logic says get all page info and show it
             //var models = _blogService.GetAll();
-
             //return View(models);
+
+            // this logic will be used if you want to implement search feature so if a person is searching
+            // only searched one to be shown otherwise the whole page is shown
             List<BlogModel> blogs;
             if (search == null)
             {

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using System.Reflection.Metadata.Ecma335;
 using System.Security.Claims;
 
 namespace IT.Webapp.Controllers
@@ -16,6 +17,10 @@ namespace IT.Webapp.Controllers
         public async Task<IActionResult> Login(LoginModel model)
         {
             //logic for user authentication from database
+            if(!(model.Email=="sz@gmail.com" && model.Password=="szafaq"))
+            {
+                return RedirectToAction(nameof(Login));
+            }
 
             try { 
             //creating list of claims
@@ -36,6 +41,12 @@ namespace IT.Webapp.Controllers
             }
             
             
+        }
+        public async Task<IActionResult> Logout()
+        {
+            await this.HttpContext.SignOutAsync();
+            return RedirectToAction("Login", "Authentication");
+            //return RedirectToAction(nameof(Login));
         }
     }
 }

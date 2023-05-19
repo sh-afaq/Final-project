@@ -18,4 +18,8 @@
     <ProjectReference Include="..\..\Repositories\IT.Data\IT.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="OptionModels\" />
+  </ItemGroup>
+
 </Project>
