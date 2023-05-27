@@ -5,11 +5,11 @@ using IT.Data.Interfaces;
 using IT.DependencyInjection.OptionModels;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.IdentityModel.Protocols;
-
+using IT.DependencyInjection;
 namespace IT.DependencyInjection
 {
     public static class AppInfrastructure
@@ -20,6 +20,7 @@ namespace IT.DependencyInjection
             //configure entity framework
             services.AddDbContext<ITWebsiteDbContext>(
             options => options.UseSqlServer(configuration.GetConnectionString("DbConnection")));
+            
             //repositories configuration
             services.AddScoped(typeof(IRepository<>),typeof(Repository<>));
             //setting configuration for authentication

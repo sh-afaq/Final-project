@@ -24,10 +24,10 @@
               <button type="button" style = "position:relative; left:790px; "class="btn btn-primary "> Contact Us</button >
                    
                  </a>
-                  <a class="navbar-brand "asp-area="" asp-controller="authentication" asp-action="Login">
+                  @*<a class="navbar-brand "asp-area="" asp-controller="authentication" asp-action="Login">
                   
-              <button type="button" style = "position:relative; left:795px; "class="btn btn-primary "> Login</button >
-                   
+              <button type="button" style = "position:relative; left:795px; "class="btn btn-primary "> Login</button >*@
+                   <partial name="_LoginPartial" />
                  </a>
                  <div class="navbar-nav">
                      <a  class=" nav-item nav-link" asp-controller="authentication" asp-action="Logout" >

@@ -298,7 +298,9 @@ C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presenta
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Humanizer.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Microsoft.Build.dll
@@ -328,6 +330,7 @@ C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presenta
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
@@ -562,6 +565,7 @@ C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presenta
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\obj\Debug\net7.0\IT.Webapp.AssemblyInfoInputs.cache
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\obj\Debug\net7.0\IT.Webapp.AssemblyInfo.cs
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\obj\Debug\net7.0\IT.Webapp.csproj.CoreCompileInputs.cache
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\obj\Debug\net7.0\IT.Webapp.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\obj\Debug\net7.0\IT.Webapp.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\obj\Debug\net7.0\IT.Webapp.RazorAssemblyInfo.cache
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Presentation\IT.Webapp\obj\Debug\net7.0\IT.Webapp.RazorAssemblyInfo.cs
