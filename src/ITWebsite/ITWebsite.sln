@@ -26,9 +26,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IT.Business.Interfaces", "B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IT.Data.Models", "Repositories\IT.Data.Models\IT.Data.Models.csproj", "{F79FB285-B0CF-4C7D-804B-2EE5BC96D582}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IT.DependencyInjection", "Infrastructure\IT.DependencyInjection\IT.DependencyInjection.csproj", "{00CF9A6F-584A-4EC1-9BA5-7451BD537A5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IT.DependencyInjection", "Infrastructure\IT.DependencyInjection\IT.DependencyInjection.csproj", "{00CF9A6F-584A-4EC1-9BA5-7451BD537A5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IT.Data.Interfaces", "Repositories\IT.Data.Interfaces\IT.Data.Interfaces.csproj", "{0C9B2573-41FC-462E-8128-7233B7E9BF39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IT.Data.Interfaces", "Repositories\IT.Data.Interfaces\IT.Data.Interfaces.csproj", "{0C9B2573-41FC-462E-8128-7233B7E9BF39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,8 +1,8 @@
 ﻿using IT.Business.Interfaces;
 using IT.Business.Models;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace IT.Webapp.Controllers
 {
@@ -10,9 +10,11 @@ namespace IT.Webapp.Controllers
     public class BlogController : Controller
     {
         private readonly IBlogService _blogService;
+        
         public BlogController(IBlogService blogService)
         {
             _blogService= blogService;
+            
         }
         // GET: BlogController
         public ActionResult Index(string? search)
@@ -24,9 +26,11 @@ namespace IT.Webapp.Controllers
             // this logic will be used if you want to implement search feature so if a person is searching
             // only searched one to be shown otherwise the whole page is shown
             List<BlogModel> blogs;
+
             if (search == null)
             {
                blogs = _blogService.GetAll();
+                
             }
             else
             {

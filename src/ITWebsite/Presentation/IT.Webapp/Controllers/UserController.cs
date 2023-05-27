@@ -3,17 +3,22 @@ using IT.Business.Interfaces;
 using IT.Business.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 
 
 namespace IT.Webapp.Controllers
 {
     [Authorize]
+   
     public class UserController : Controller
     {
         private readonly IUserService _userService;
-        public UserController (IUserService userService)
+        //cache
+        private readonly IMemoryCache _memoryCache;
+        public UserController (IUserService userService, IMemoryCache memoryCache)
         {
             _userService = userService;
+            _memoryCache = memoryCache;
         }
         // GET: UserController
         public ActionResult Index(string? search)
@@ -22,6 +27,7 @@ namespace IT.Webapp.Controllers
            if(search==null)
             {
                users= _userService.GetAll();
+                _ = _memoryCache.Set("services", users);
             }
             else
             {

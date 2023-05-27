@@ -1,7 +1,10 @@
-﻿using IT.Webapp.Models;
+﻿using IT.DependencyInjection.OptionModels;
+using IT.Webapp.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.Options;
+using Microsoft.Extensions.Options;
 using System.Reflection.Metadata.Ecma335;
 using System.Security.Claims;
 
@@ -9,6 +12,11 @@ namespace IT.Webapp.Controllers
 {
     public class AuthenticationController : Controller
     {
+        private readonly AccountOptions _adminAccount;
+        public AuthenticationController(IOptions<AccountOptions> _adminAccountOptions)
+        {
+            _adminAccount= _adminAccountOptions.Value;
+        }
         public IActionResult Login()
         {
             return View();
@@ -17,7 +25,7 @@ namespace IT.Webapp.Controllers
         public async Task<IActionResult> Login(LoginModel model)
         {
             //logic for user authentication from database
-            if(!(model.Email=="sz@gmail.com" && model.Password=="szafaq"))
+            if(!(model.Email==_adminAccount.Email && model.Password==_adminAccount.Password))
             {
                 return RedirectToAction(nameof(Login));
             }

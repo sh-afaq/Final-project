@@ -2,6 +2,7 @@
 using IT.Business.Interfaces;
 using IT.Data;
 using IT.Data.Interfaces;
+using IT.DependencyInjection.OptionModels;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
@@ -35,6 +36,14 @@ namespace IT.DependencyInjection
             services.AddScoped<IBlogService, BlogService>();
             // automapper configuration
             services.AddAutoMapper(typeof(BusinessEntityMappings));
+            //setting up all the option models
+            services.Configure<AccountOptions>((option) =>
+                {
+                    //configure admin account for login to system
+                    configuration.GetSection("Account").Bind(option);
+                });
+            //memory cache setup
+            services.AddMemoryCache();
 
         }
 
