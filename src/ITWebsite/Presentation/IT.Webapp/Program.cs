@@ -14,6 +14,7 @@ namespace IT.Webapp
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddRazorPages();
             builder.Services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ITWebsiteDbContext>();
             //ALL APPLICATION DI CONFIGURATIONS
@@ -38,7 +39,7 @@ namespace IT.Webapp
             app.UseAuthentication();
 
             app.UseAuthorization();
-
+            app.MapRazorPages();
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
