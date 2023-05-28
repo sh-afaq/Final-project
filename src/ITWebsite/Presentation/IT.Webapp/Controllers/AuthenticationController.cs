@@ -1,7 +1,9 @@
 ﻿using IT.DependencyInjection.OptionModels;
 using IT.Webapp.Models;
+using Microsoft.AspNet.Identity.Owin;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.Options;
 using Microsoft.Extensions.Options;
@@ -50,11 +52,13 @@ namespace IT.Webapp.Controllers
             
             
         }
+
         public async Task<IActionResult> Logout()
         {
             await this.HttpContext.SignOutAsync();
             return RedirectToAction("Login", "Authentication");
             //return RedirectToAction(nameof(Login));
         }
+
     }
 }
