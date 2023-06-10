@@ -1,9 +1,13 @@
 
+
 using IT.Data;
 using IT.DependencyInjection;
+
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 
+
+//using Microsoft.Extensions.DependencyInjection.Abstractions;
 namespace IT.Webapp
 {
     public class Program
@@ -15,15 +19,27 @@ namespace IT.Webapp
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddRazorPages();
-            builder.Services.AddDefaultIdentity<IdentityUser>()
-                .AddEntityFrameworkStores<ITWebsiteDbContext>();
+            builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddDefaultUI()
+    .AddEntityFrameworkStores<ITWebsiteDbContext>()
+    .AddDefaultTokenProviders();
+
+
+            //CONfIGURING login path
+            builder.Services.ConfigureApplicationCookie(opts => opts.LoginPath = "/Identity/Account/Login");
+
+            // Register the required services
+
+            builder.Services.AddScoped<RoleManager<IdentityRole>>();
+  
+
             //ALL APPLICATION DI CONFIGURATIONS
             builder.Services.AppDISetup(builder.Configuration);
-            //this is
-            var app = builder.Build();
             
 
-
+            //this is
+            var app = builder.Build();
+    
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {

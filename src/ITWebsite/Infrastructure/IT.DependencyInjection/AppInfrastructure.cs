@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using IT.DependencyInjection;
+
 namespace IT.DependencyInjection
 {
     public static class AppInfrastructure
@@ -21,18 +21,25 @@ namespace IT.DependencyInjection
             services.AddDbContext<ITWebsiteDbContext>(
             options => options.UseSqlServer(configuration.GetConnectionString("DbConnection")));
             
+            services.AddScoped<DbContext,ITWebsiteDbContext>();
+
+
+
             //repositories configuration
             services.AddScoped(typeof(IRepository<>),typeof(Repository<>));
             //setting configuration for authentication
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie((CookieOptions) =>
             {
-                CookieOptions.LoginPath = "/Authentication/Login";
-                CookieOptions.Cookie = new CookieBuilder {
-                    Name= "TechStudio" };
+                CookieOptions.LoginPath = "/Identity/Account/Login";
+                CookieOptions.Cookie = new CookieBuilder
+                {
+                    Name = "TechStudio"
+                };
 
             });
 
             // all of custom configuration
+
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IBlogService, BlogService>();
             // automapper configuration
@@ -45,6 +52,8 @@ namespace IT.DependencyInjection
                 });
             //memory cache setup
             services.AddMemoryCache();
+           
+
 
         }
 
