@@ -47,6 +47,7 @@ namespace IT.Webapp.Controllers
         }
 
         // GET: BlogController/Create
+        [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
             return View();
@@ -55,20 +56,56 @@ namespace IT.Webapp.Controllers
         // POST: BlogController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(BlogModel model)
+        //public ActionResult Create(BlogModel model)
+        //{
+        //    try
+        //    {
+        //        _blogService.Add(model);
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
+        [HttpPost]
+        public async Task<IActionResult> Create(BlogModel model, IFormFile ImageFile)
         {
-            try
+            if (ModelState.IsValid)
             {
+                if (ImageFile != null && ImageFile.Length > 0)
+                {
+                    // Validate file extension or other requirements if needed
+
+                    // Generate a unique file name or use the original file name
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(ImageFile.FileName);
+
+                    // Specify the destination path to save the uploaded file
+                    string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Images", fileName);
+
+                    // Save the uploaded file to the specified path
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ImageFile.CopyToAsync(fileStream);
+                    }
+
+                    // Set the ImageUrl property of the model to the saved file path
+                    model.ImageUrl = "/Images/" + fileName;
+                }
+
+                // Add the model to the database through the _blogService
                 _blogService.Add(model);
+
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+
+            return View(model);
         }
 
+
+
         // GET: BlogController/Edit/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Edit(int id)
         {
             var blogmodel = _blogService.GetById(id);
@@ -92,6 +129,7 @@ namespace IT.Webapp.Controllers
         }
 
         // GET: BlogController/Delete/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Delete(int id)
         {
             try

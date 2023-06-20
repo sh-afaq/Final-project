@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using IT.Business.Interfaces;
+using IT.Business.Models;
 using IT.Data.Interfaces;
 using IT.Data.Models;
 
@@ -14,6 +15,15 @@ namespace IT.Business.DataServices
         {
             _repository = repository;
             _mapper = mapper;
+
+            var configuration = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<TEntity, TModel>();
+                cfg.CreateMap<TModel, TEntity>();
+            });
+
+            // Add the mapping configuration to the existing IMapper instance
+            _mapper = configuration.CreateMapper();
         }
         public List<TModel> GetAll()
         {
@@ -45,7 +55,7 @@ namespace IT.Business.DataServices
         public List<TModel> Search(string searchTerm)
         {
             throw new NotImplementedException();
-        }
+        } 
 
         public TModel GetById(int id)
         {

@@ -765,6 +765,9 @@
       "IT.Business.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "IT.Data.Models": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/IT.Business.Models.dll": {}
         },

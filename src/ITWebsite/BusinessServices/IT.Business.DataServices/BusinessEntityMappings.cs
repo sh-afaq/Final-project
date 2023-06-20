@@ -1,11 +1,7 @@
 ﻿using AutoMapper;
 using IT.Business.Models;
 using IT.Data.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace IT.Business.DataServices
 {
@@ -14,7 +10,9 @@ namespace IT.Business.DataServices
         public BusinessEntityMappings() 
         { 
         CreateMap<UserModel,User>().ReverseMap();
-        CreateMap<BlogModel, Blog>().ReverseMap();
+        CreateMap<BlogModel, Blog>().
+                ForMember(dest => dest.ImageUrl, opt => opt.MapFrom(src => src.ImageUrl)).
+                ReverseMap();
         }
     }
 }

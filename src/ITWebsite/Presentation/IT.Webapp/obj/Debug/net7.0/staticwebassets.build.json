@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KmOEPlPMAw7y+aj7X3wk8IqMaeNBrR4peBqDHbUR+Gg=",
+  "Hash": "8fg+rrXKN0xBod0LLf93kl6M8FxGTe6iPQGm3z9NBw8=",
   "Source": "IT.Webapp",
   "BasePath": "_content/IT.Webapp",
   "Mode": "Default",
@@ -1103,6 +1103,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\wwwroot\\images\\69987614-a97c-4009-99f6-ae0d64e40c9c.png",
+      "SourceId": "IT.Webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\wwwroot\\",
+      "BasePath": "_content/IT.Webapp",
+      "RelativePath": "images/69987614-a97c-4009-99f6-ae0d64e40c9c.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\69987614-a97c-4009-99f6-ae0d64e40c9c.png"
+    },
+    {
+      "Identity": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\wwwroot\\images\\8f50183f-16f0-4a4d-a35e-bf0b83bd347f.png",
+      "SourceId": "IT.Webapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\wwwroot\\",
+      "BasePath": "_content/IT.Webapp",
+      "RelativePath": "images/8f50183f-16f0-4a4d-a35e-bf0b83bd347f.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\8f50183f-16f0-4a4d-a35e-bf0b83bd347f.png"
     },
     {
       "Identity": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Presentation\\IT.Webapp\\wwwroot\\images\\img1.jpg",

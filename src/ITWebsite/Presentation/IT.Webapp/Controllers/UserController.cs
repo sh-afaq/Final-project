@@ -36,9 +36,10 @@ namespace IT.Webapp.Controllers
             return View(users);
         }
 
-       
+
 
         // GET: UserController/Create
+        [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
             return View();
@@ -61,6 +62,7 @@ namespace IT.Webapp.Controllers
         }
 
         // GET: UserController/Edit/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Edit(int id)
         {
 
@@ -86,6 +88,7 @@ namespace IT.Webapp.Controllers
         }
 
         // GET: UserController/Delete/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Delete(int id)
         {
             _userService.Delete(id);

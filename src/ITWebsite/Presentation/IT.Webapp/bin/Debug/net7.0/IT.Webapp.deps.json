@@ -2708,6 +2708,9 @@
         }
       },
       "IT.Business.Models/1.0.0": {
+        "dependencies": {
+          "IT.Data.Models": "1.0.0"
+        },
         "runtime": {
           "IT.Business.Models.dll": {}
         }

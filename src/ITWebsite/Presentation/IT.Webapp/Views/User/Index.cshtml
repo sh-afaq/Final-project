@@ -44,7 +44,10 @@
                                       </div>     
                                 </div>
                             
-                           
+                           @if (User.IsInRole("Admin"))
+                           {
+    
+
                               <div class="row align-items-start">
                                   <div class="alignment">
                                   @Html.ActionLink("Edit", "Edit", new {  id=item.id},
@@ -52,9 +55,10 @@
                                         @Html.ActionLink("Delete", "Delete", new {  id=item.id}, 
                                         new { @class = "btn btn-primary" ,@style = "color:white;"})
                            
-                                 </div>
+                                  </div>
                        
-                             </div>
+                              </div>
+                             }
                             
                     
                     
@@ -65,12 +69,15 @@
                       
         
         }
-        <div class="container">
-                         <div class="row align-items-start">
-                             <a asp-action="Create"><button type="button" style = "position:relative;
-                                        left:950px;background-color:blue;"
-                                       class="btn btn-primary "> Create New</button ></a>
-                               
-                           </div>
-        </div>
+        @if (User.IsInRole("Admin"))
+{
 
+    <div class="container">
+        <div class="row align-items-start">
+            <a asp-action="Create"><button type="button" style = "position:relative;
+                                                    left:950px;background-color:blue;"
+                                                   class="btn btn-primary "> Create New</button ></a>
+
+        </div>
+    </div>
+}

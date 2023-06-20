@@ -22,3 +22,6 @@ C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\Business
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\BusinessServices\IT.Business.Models\obj\Debug\net7.0\refint\IT.Business.Models.dll
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\BusinessServices\IT.Business.Models\obj\Debug\net7.0\IT.Business.Models.pdb
 C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\BusinessServices\IT.Business.Models\obj\Debug\net7.0\ref\IT.Business.Models.dll
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\BusinessServices\IT.Business.Models\bin\Debug\net7.0\IT.Data.Models.dll
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\BusinessServices\IT.Business.Models\bin\Debug\net7.0\IT.Data.Models.pdb
+C:\Users\zohaib\Documents\ITWebsite\Project\Final-project\src\ITWebsite\BusinessServices\IT.Business.Models\obj\Debug\net7.0\IT.Business.Models.csproj.CopyComplete

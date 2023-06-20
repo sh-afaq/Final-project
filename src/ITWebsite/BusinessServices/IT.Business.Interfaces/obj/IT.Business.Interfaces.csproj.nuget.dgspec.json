@@ -89,7 +89,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data.Models\\IT.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Repositories\\IT.Data.Models\\IT.Data.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

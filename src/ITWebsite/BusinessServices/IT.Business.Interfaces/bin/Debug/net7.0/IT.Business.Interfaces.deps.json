@@ -477,6 +477,9 @@
       },
       "System.Text.Encodings.Web/4.5.0": {},
       "IT.Business.Models/1.0.0": {
+        "dependencies": {
+          "IT.Data.Models": "1.0.0"
+        },
         "runtime": {
           "IT.Business.Models.dll": {}
         }

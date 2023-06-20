@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "h+N79FhlwbxpgVVkcy5+pRHEwDsXtjeOXmiV3jXuDumu0Yw3gxEV/8e9+I9Je2WzGPT8wh+5QKzndNnCE2SsPA==",
+  "dgSpecHash": "CuL03u5PEVYEDFXuHag8EYu5A2pnpZH4Z3I+/N6b8OIt8ZEhWIBV58izgcF9cdHjdGOL70EEMCv0Mjs9GM9dIw==",
   "success": true,
   "projectFilePath": "C:\\Users\\zohaib\\Documents\\ITWebsite\\Project\\Final-project\\src\\ITWebsite\\Infrastructure\\IT.DependencyInjection\\IT.DependencyInjection.csproj",
   "expectedPackageFiles": [

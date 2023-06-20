@@ -1,5 +1,6 @@
 ﻿using IT.Business.DataServices;
 using IT.Business.Interfaces;
+using IT.Business.Models;
 using IT.Data;
 using IT.Data.Interfaces;
 using IT.DependencyInjection.OptionModels;
@@ -41,7 +42,8 @@ namespace IT.DependencyInjection
             // all of custom configuration
 
             services.AddScoped<IUserService, UserService>();
-            services.AddScoped<IBlogService, BlogService>();
+            services.AddScoped<IGenericService<BlogModel>, BlogService>();
+            //services.AddScoped<IBlogService, BlogService>();
             // automapper configuration
             services.AddAutoMapper(typeof(BusinessEntityMappings));
             //setting up all the option models

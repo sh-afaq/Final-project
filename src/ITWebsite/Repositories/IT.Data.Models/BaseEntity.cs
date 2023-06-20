@@ -9,5 +9,9 @@ namespace IT.Data.Models
         public DateTime UpdateOn { get; set; }
         public bool IsActive { get; set; } = true;
         public bool IsDeleted{get;set;}
+        
     }
+    
+
+    
 }
