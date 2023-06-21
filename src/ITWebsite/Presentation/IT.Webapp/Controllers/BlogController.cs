@@ -1,8 +1,13 @@
 ﻿using IT.Business.Interfaces;
 using IT.Business.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Caching.Memory;
+using NuGet.ContentModel;
+using System.Reflection.Metadata;
+using System;
 
 namespace IT.Webapp.Controllers
 {
@@ -10,50 +15,76 @@ namespace IT.Webapp.Controllers
     public class BlogController : Controller
     {
         private readonly IBlogService _blogService;
-        
-        public BlogController(IBlogService blogService)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+
+        public BlogController(IBlogService blogService, IWebHostEnvironment webHostEnvironment)
         {
             _blogService= blogService;
-            
+            _webHostEnvironment = webHostEnvironment;
+
         }
         // GET: BlogController
-        public ActionResult Index(string? search)
-        {
-            //this logic says get all page info and show it
-            //var models = _blogService.GetAll();
-            //return View(models);
+        //public ActionResult Index(string? search)
+        //{
+        //    //this logic says get all page info and show it
+        //    //var models = _blogService.GetAll();
+        //    //return View(models);
 
-            // this logic will be used if you want to implement search feature so if a person is searching
-            // only searched one to be shown otherwise the whole page is shown
+        //    // this logic will be used if you want to implement search feature so if a person is searching
+        //    // only searched one to be shown otherwise the whole page is shown
+        //    List<BlogModel> blogs;
+
+        //    if (search == null)
+        //    {
+        //       blogs = _blogService.GetAll();
+
+        //    }
+        //    else
+        //    {
+        //       blogs = _blogService.Search(search).ToList();
+        //    }
+        //    return View(blogs);
+
+        //}
+        public IActionResult Index(string search)
+        {
             List<BlogModel> blogs;
 
-            if (search == null)
+            if (string.IsNullOrEmpty(search))
             {
-               blogs = _blogService.GetAll();
-                
+                blogs = _blogService.GetAll();
             }
             else
             {
-               blogs = _blogService.Search(search).ToList();
+                blogs = _blogService.Search(search);
             }
-            return View(blogs);
 
+            var blogModels = blogs.Select(blog => new BlogModel
+            {
+                Id = blog.Id,
+                Name = blog.Name,
+                Description = blog.Description,
+                ImageUrl = blog.ImageUrl ?? string.Empty
+            }).ToList();
+            return View(blogModels);
         }
+
+
 
         // GET: BlogController/Details/5
         public ActionResult Details(int id)
-        {
-            return View();
-        }
+    {
+        return View();
+    }
 
-        // GET: BlogController/Create
+    // GET: BlogController/Create
         [Authorize(Roles = "Admin")]
-        public ActionResult Create()
-        {
-            return View();
-        }
+    public ActionResult Create()
+    {
+        return View();
+    }
 
-        // POST: BlogController/Create
+    // POST: BlogController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         //public ActionResult Create(BlogModel model)
@@ -73,24 +104,20 @@ namespace IT.Webapp.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (ImageFile != null && ImageFile.Length > 0)
+                if (model.ImageFile != null && model.ImageFile.Length > 0)
                 {
-                    // Validate file extension or other requirements if needed
+                    // Generate a unique filename or use the original filename if desired
+                    string uniqueFileName = Guid.NewGuid().ToString() + "_" + model.ImageFile.FileName;
 
-                    // Generate a unique file name or use the original file name
-                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(ImageFile.FileName);
-
-                    // Specify the destination path to save the uploaded file
-                    string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Images", fileName);
-
-                    // Save the uploaded file to the specified path
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    // Save the uploaded image to a directory
+                    string imagePath = Path.Combine(_webHostEnvironment.WebRootPath, "images", uniqueFileName);
+                    using (var stream = new FileStream(imagePath, FileMode.Create))
                     {
-                        await ImageFile.CopyToAsync(fileStream);
+                        model.ImageFile.CopyTo(stream);
                     }
 
-                    // Set the ImageUrl property of the model to the saved file path
-                    model.ImageUrl = "/Images/" + fileName;
+                    // Update the ImageUrl property of the model with the image path
+                    model.ImageUrl = "/images/" + uniqueFileName;
                 }
 
                 // Add the model to the database through the _blogService

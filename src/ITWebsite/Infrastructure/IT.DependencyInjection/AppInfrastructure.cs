@@ -42,6 +42,7 @@ namespace IT.DependencyInjection
             // all of custom configuration
 
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IBlogService, BlogService>();
             services.AddScoped<IGenericService<BlogModel>, BlogService>();
             //services.AddScoped<IBlogService, BlogService>();
             // automapper configuration
